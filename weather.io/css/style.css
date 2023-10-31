@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: "D7MBI";
+    src: url("../fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-BoldItalic.woff") format('woff');
+}
+@font-face {
+    font-family: "D7MI";
+    src: url("../fonts-DSEG_v046/DSEG7-Modern/DSEG7Modern-Italic.woff") format('woff');
+}
+@font-face {
+    font-family: "D14MI";
+    src: url("../fonts-DSEG_v046/DSEG14-Modern/DSEG14Modern-Italic.woff") format('woff');
+}
+/*DSEG Weather*/
+@font-face {
+    font-family: "DWEATHER";
+    src: url("../fonts-DSEG_v046/DSEGWeather/DSEGWeather.woff") format('woff');
+}
+
+.D7MI {
+  font-family: "D7MI";
+}
+  
+.D7MBI {
+  font-family: "D7MBI";
+}
+  
+.D14MI {
+  font-family: "D14MI";
+}
+  
+.DWEATHER {
+  font-family: "DWEATHER";
+  font-size:72px;
+  height:72px;
+}
+
+*{
+  margin: auto;
+}
+
+section{
+  justify-content: center; 
+  display: flex; 
+  margin-top: 1em;
+  text-align: center;
+}
+
+.city{
+  font-family: "D14MI";
+  margin-top: 1mm;
+}
+
+.temp{
+  font-family: "D14MI";
+  margin-top: 3mm;
+}  
+
+.humidity{
+  font-family: "D14MI";
+  margin-top: 1mm;
+}
+
+.wind{
+  font-family: "D14MI";
+  margin-top: 1mm;
+}
+
+.description{
+  font-family: "D14MI";
+  margin-top: 1mm;
+  font-size: smaller;
+}
+
+.flex{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

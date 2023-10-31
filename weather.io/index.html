@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="./script.js" defer></script>
+        <style>
+            
+            .Clock-Wrapper{
+                position:relative;
+                border:6px solid #000;
+                border-radius:9px;
+                height:200px;
+                width:306px;
+                background-image: url(data:image/png;base64,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);
+                background-color:#fb7c00;
+                box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.4) inset;
+                
+                margin-top: 3%; 
+            }
+
+            .Weather-Background{
+                z-index:50;
+                position:absolute;
+                top:120px;
+                left:6px;
+                color:rgba(0,0,0,0.1);
+                font-size:70px;
+                
+            }
+
+            .Weather{
+                z-index:100;
+                position:absolute;
+                top:120px;
+                left:6px;
+                font-size:70px;
+                vertical-align: middle;
+                display:table-cell ;
+            }
+
+            .Clock-Time-Background{
+                z-index:50;
+                position:absolute;
+                top:45px;
+                left:6px;
+                color:rgba(0,0,0,0.1);
+                font-size:70px;
+                
+            }
+
+            .Clock-Time-Front{
+                z-index:100;
+                position:absolute;
+                top:45px;
+                left:6px;
+                font-size:70px;
+            }
+
+            .Clock-Year-Background{
+                z-index:50;
+                position:absolute;
+                top:13px;
+                left:6px;
+                color:rgba(0,0,0,0.1);
+                font-size:27px;
+            }
+
+            .Clock-Year-Front{
+                z-index:100;
+                position:absolute;
+                top:13px;
+                left:6px;
+                font-size:27px;
+
+            }
+
+            .InputForm-Wrapper{
+                position:relative;
+                border:1px solid #000;
+                border-radius:3px;
+                height:80px;
+                margin-top:10px;
+            }
+
+            .InputForm-Front{
+                z-index:100;
+                position:absolute;
+                top:30px;
+                left:6px;
+                font-size:60px;
+            }
+
+            .example-Wrapper{
+                position:relative;
+                border:1px solid #000;
+                border-radius:3px;
+                height:80px;
+                margin-top:10px;
+            }
+
+            .example-Front{
+                z-index:100;
+                position:absolute;
+                top:30px;
+                left:6px;
+                font-size:60px;
+            }
+
+            .center{
+	            text-align:center;
+            }
+
+            td{
+                padding: 0px;
+            }
+
+        </style>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <script>
+
+            var daylist = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+            function genTimerStrings(tm, num){
+
+                var i;
+                var ret = tm.toString(10);
+                var left = ret.length;
+
+                if( left < num){
+                    for(i=0; i<( num - left ); i++ ){
+                        ret = String(0) + ret;
+                    }
+                }
+                return ret;
+            }
+
+            function updateTimer(){
+                var ret;
+                var date = new Date();
+                var tm_year, tm_mon, tm_date, tm_hour, tm_min, tm_sec, tm_msec,tm_day;
+                var colon;
+
+                tm_year = date.getFullYear();
+                tm_mon = date.getMonth()+1;
+                tm_date = date.getDate();
+                tm_day = date.getDay();
+                tm_hour = date.getHours();
+                tm_min = date.getMinutes();
+                tm_sec = date.getSeconds();
+                tm_msec = date.getMilliseconds();
+
+                tm_mon = genTimerStrings(tm_mon, 2);
+                tm_date = genTimerStrings(tm_date, 2);
+                tm_hour = genTimerStrings(tm_hour, 2);
+                tm_min = genTimerStrings(tm_min, 2);
+                tm_sec = genTimerStrings(tm_sec, 2);
+                tm_day = daylist[tm_day];
+
+                if( tm_msec > 499 ){
+                    colon = ' ';
+                }else{
+                    colon = ':';
+                }
+
+                document.getElementById("DSEGClock").innerHTML = tm_hour + colon + tm_min + "<span style=\"font-size:30px;\">"  + tm_sec + "</span>";
+                document.getElementById("DSEGClock-Year").innerHTML = "<span class=\"D7MI\">" + tm_year + "-" + tm_mon + "-" + tm_date + ' ' + "</span><span class=\"D14MI\">" + tm_day  +  "." + "</span>";
+
+                setTimeout("updateTimer()", 500 - date.getMilliseconds()%500 );
+
+                var weather = 0;
+
+                console.log(weather+tm_sec%10)
+
+                const a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                const b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+                const c = [2, 3, 4, 5, 6, 7, 8, 9, 0, 1]
+                const d = [3, 4, 5, 6, 7, 8, 9, 0, 1, 2]
+                const e = [4, 5, 6, 7, 8, 9, 0, 1, 2, 3]
+
+                document.getElementById("one").innerHTML = a[weather+tm_sec%10]
+                document.getElementById("two").innerHTML = b[weather+tm_sec%10]
+                document.getElementById("three").innerHTML = c[weather+tm_sec%10]
+                document.getElementById("four").innerHTML = d[weather+tm_sec%10]
+                document.getElementById("five").innerHTML = e[weather+tm_sec%10]
+
+            }
+
+                
+
+        </script>
+
+
+    </head>
+
+    <body onload="updateTimer()" >
+        <div class="center">
+            <div class="Clock-Wrapper">
+                <span class="Weather-Background DWEATHER"> 0 0 0 0 0 </span>
+                
+                <span class="Weather DWEATHER"><span id="one"></span><span> </span><span id="two"></span><span> </span><span id="three"></span><span> </span><span id="four"></span><span> </span><span id="five"></span></span>
+                
+                <span class="Clock-Time-Background D7MBI">88:88<span style="font-size:30px;">88</span></span>
+                <span id="DSEGClock" class="Clock-Time-Front D7MBI"></span>
+                <span class="Clock-Year-Background"><span class="D7MI">2088-88-88</span><span class="D14MI"> ~~~</span></span>
+                <span id="DSEGClock-Year" class="Clock-Year-Front"></span>
+            </div>
+        </div>
+      
+    <section>    
+
+        <div class="weather loading">
+        <h2 class="city" >Weather in -- </h2>
+        <h1 class="temp"> - °C </h1>
+            
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="weatherpic" class="icon" />
+            </div>
+
+
+            <div class="description"> -- </div>
+            <div class="humidity">Humidity: -- %</div>
+            <div class="wind">Windspeed: -- km/h</div>
+        </div>
+
+        
+
+    </section>
+    
+
+    </body>
+</html>
